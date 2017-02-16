@@ -57,12 +57,10 @@
             </ul>
           </li>
           {% else %}
-          <li><a href="{% url 'account_login' %}">登录</a></li><li><a href="/accounts/signup/">注册</a></li>
+          <li><a href="{% url 'account_login' %}">登录</a></li><li><a href="/accounts/signup/">注册</a></li><li><wb:login-button type="5,3" onlogin="login" onlogout="logout">登录按钮</wb:login-button></li>
           {% endif %}
         </ul>
-       <div class="navbar-collapse collapse">
-        <wb:login-button type="5,3" onlogin="login" onlogout="logout">登录按钮</wb:login-button>
-      </div>
+        
       </div>
     </div>
   </nav>
